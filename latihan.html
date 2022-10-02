@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+      .btn {
+        background-color: lightskyblue !important;
+        border-color: white;
+        color: black !important;
+      }
+      .nav-link {
+        text-decoration: none;
+        color: gray;
+      }
+      .nav-link:hover {
+        text-decoration: none;
+        color: black;
+      }
+    </style>
+
+    <script>
+  $(document).ready(function(){
+      $("#myBtn").click(function(){
+          $("#myToast").toast("show");
+      });
+  });
+    </script>
+  </head>
+
+  <body>
+
+    
+    <!-- Awal Navbar -->
+    <nav class="navbar navbar-expand-lg" style="background-color: lightskyblue;" id="navbars">
+      <div class="container">
+        <a class="navbar-brand" href="#">Dylan</a>
+        <div class="spinner-grow text-primary" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow text-secondary" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow text-success" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow text-danger" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow text-warning" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow text-info" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow text-light" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow text-dark" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#waifu">Waifu</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="toast text-black fade show" role="alert" aria-live="assertive" aria-atomic="true" style="background-color: lightskyblue;margin-top: 20px;">
+      <div class="toast-header text-black" style="background-color: lightskyblue;">
+        <i class="bi-gift-fill" class="rounded me-2"></i>
+        <strong class="me-auto">Pesan</strong>
+        <small>Baru Saja</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        Halo, terimakasih telah berkunjung di web ini :3
+      </div>
+    </div>
+    <!-- Akhir Navbar -->
+
+
+    <!-- Awal Jumbotron -->
+    <div class="jumbotron text-center py-5">
+      <img src="https://i.pinimg.com/736x/25/bc/e1/25bce1d90c9778c2502d20359ab36338.jpg" alt="Khair Dylan Athaya" width="200" />
+      <h1 class="display-4">Khair Dylan Athaya</h1>
+      <p class="lead">543221051@smktelkom-bjb.sch.id</p>
+    </div>
+    <!-- Akhir Jumbotron -->
+
+    <!-- Awal About -->
+    <div id="about" class="text-center py-5" style="background-color: lightskyblue">
+      <div class="container">
+        <div class="row mb-3">
+          <div class="col">
+            <h2>About Me</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-4">
+            <p>Perkenalkan nama saya Khair Dylan Athaya, saya sering di panggil Dylan oleh teman-teman saya. Saya lahir di Banjarbaru 09 Oktober 2007.</p>
+          </div>
+          <div class="col-md-4">
+            <p>Saya tinggal di cindai alus, Martapura. Saya memiliki hobi ngoding, nonton anime, dan membaca manga. Pelajaran yang saya sukai adalah pemprograman dan yang saya benci adalah matematika.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Akhir About -->
+
+    <!-- Awal Gallery -->
+    <div id="waifu" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center mb-3">
+            <h2>My Waifu</h2>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-4 mb-3 mx-auto">
+            <div class="card" style="width: 18rem">
+              <img src="https://i.pinimg.com/736x/6a/a5/0b/6aa50b554fcefbd0b849192894a985d7.jpg" class="card-img-top" alt="Poto Saya" />
+              <div class="card-body">
+                <h5 class="card-title">Yukina Himeragi | Strike The Blood</h5>
+                <p class="card-text">Yukina Himeragi adalah sebuah karakter fiksi dari serial kartun jepang(anime) yang bernama Strike The Blood. Anime ini bercerita awal seorang anak Sekolah Menengah Atas yang berjulukan Koujo Akatsuki yang ternyata merupakan seorang "Fourth Primogenitor" yaitu vampire terkuat di dunia yang seharusnya hanya ada di dalam legenda. Konon Fourth Progenitor ini mempunyai 12 "familiar" yang sanggup mengancam keamanan.</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#gambar-pertama">View Image</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-3">
+            <div class="card" style="width: 18rem">
+              <img src="https://i.pinimg.com/736x/3c/b9/f9/3cb9f94c1dbe370adbfa3c731a6cc8fe.jpg" class="card-img-top" alt="Poto Saya" />
+              <div class="card-body">
+                <h5 class="card-title">Kaori Miyazono | Your Lie In April</h5>
+                <p class="card-text">Kaori Miyazono adalah karakter anime dari Shigatsu Wa Kimi No Uso (Your Lie In April). Shigatsu wa Kimi no Uso menceritakan tentang seorang pianis cilik yang memiliki kesulitan bermain musik lagi setelah ibunya meninggal, dan dia mempunyai teman kelas baru yang membuatnya mempunyai semangat bermain piano lagi.</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#gambar-kedua">View Image</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-3">
+            <div class="card" style="width: 18rem">
+              <img src="https://i.pinimg.com/736x/be/44/e3/be44e32ec8e696ffd0a9b4c4cdbd8f4d.jpg" class="card-img-top" alt="Poto Saya" />
+              <div class="card-body">
+                <h5 class="card-title">Zero Two | Darling In The FranXX</h5>
+                <p class="card-text">Zero Two adalah karakter anime dari Darling In The FranXX. Darling in the FranXX sendiri menceritakan kisah dari dua karakter utama Zero Two (pilot FranXX berdarah campuran Kyouryuu) dan Hiro (parasite yang tidak memiliki bakat untuk menjadi pilot FranXX). Mengambil latar dunia masa depan yang dilanda krisis, dimana umat manusia hanya hidup dalam sangkar Mistiltein.</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#gambar-ketiga">View Image</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Akhir Gallery -->
+
+    <!-- Modal Pertama -->
+    <div class="modal fade" id="gambar-pertama" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">View Image</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="https://i.pinimg.com/736x/6a/a5/0b/6aa50b554fcefbd0b849192894a985d7.jpg" class="img-thumbnail" />
+            <p>Yukina Himeragi | Strike The Blood</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Akhir Modal Pertama -->
+
+    <!-- Modal Kedua -->
+    <div class="modal fade" id="gambar-kedua" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">View Image</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="https://i.pinimg.com/736x/3c/b9/f9/3cb9f94c1dbe370adbfa3c731a6cc8fe.jpg" class="img-thumbnail" />
+            <p>Kaori Miyazono | Shigatsu Wa Kimi No Uso</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Akhir Modal Kedua -->
+
+    <!-- Modal Ketiga -->
+    <div class="modal fade" id="gambar-ketiga" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">View Image</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="https://i.pinimg.com/736x/be/44/e3/be44e32ec8e696ffd0a9b4c4cdbd8f4d.jpg" class="img-thumbnail" />
+            <p>Zero Two | Darling In The FranXX</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Akhir Modal Ketiga -->
+
+    <!-- Footer -->
+    <footer class="py-3" style="background-color: lightskyblue">
+      <div class="container text-center">Created with love Dylan <3</div>
+    </footer>
+    <!-- Akhir Footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  </body>
+</html>
